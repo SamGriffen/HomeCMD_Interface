@@ -103,6 +103,22 @@ input[type="time"] {
     border-radius: 10px;
 }
 
+.hour-count {
+    font-weight: bold;
+    display: inline-block;
+    min-width: 10em;
+    padding: 0.75em;
+    border-radius: 0.5em;
+    background-color: #d7a3c9;
+    color: #fff;
+}
+
+.hour-count > .mdi {
+    vertical-align: middle;
+    font-size: 1.75em;
+    padding: 0.25em;
+}
+
 /* Breakpoint for desktop */
 @media only screen and (min-width: 40em){
 

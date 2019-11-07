@@ -39,7 +39,7 @@ console.log(`Connected to SQLite database: ${db_name}`);
 
 // Route for getting seed grower settings
 app.get("/seeds/config", (req, res) => {
-	seeds.getConfig(db).then((row)=>{res.send(row)})
+	seeds.getConfig(db).then((row)=>{console.log(row);res.send(row)})
 })
 
 // Route for setting seed grower settings
