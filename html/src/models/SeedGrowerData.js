@@ -9,12 +9,8 @@ var SeedGrowerData = {
 		time_off: 0
 	},
 	// Method called when new data is obtained
-	update: (type, time) => {
-		time = time.slice(0,2) + time.slice(3) // Format the time string
-		if(type == "time-on")SeedGrowerData.data.time_on = time;
-		if(type == "time-off")SeedGrowerData.data.time_off = time;
-
-		// Put the new data to the server
+	update: () => {
+		// POST the new data to the server
 		m.request({
 			method: "POST",
 			url: "http://192.168.1.10:8000/seeds/config",
